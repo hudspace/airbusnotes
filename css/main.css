@@ -1,0 +1,319 @@
+/* Base styles */
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  background: #e3effb;
+}
+
+/* ----  Use the following CSS rules to specify these families:
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Slab', serif; ---------------------------*/
+
+/* Header styling */
+
+header {
+  background-color: #ffebcd;
+  background-image: linear-gradient(to bottom, #e3effb, #ffebcd);
+  
+  text-align: center;
+  max-width: 1150 px;
+  position: fixed;
+  top: 0;
+  padding-bottom: 10px;
+  width: 100%;
+  z-index: 1000;
+}
+
+
+#titlepage {
+  margin-bottom: -30px;
+}
+
+h1, h2 {
+  color: #0000b3;
+}
+
+img {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+
+/* Navigation Bar*/
+
+a:link {
+  color: #0000ff;
+}
+
+/*a:visited {
+  color: #00FF00;
+}*/
+
+a:hover {
+  color:#5ff;
+}
+
+/*.main-nav {
+  padding-top: 10px;
+  text-align: center;
+  margin: 0 auto;
+}*/
+
+
+.main-nav li { 
+  display: none;
+}
+
+
+/* Body Styling */
+
+
+body {
+  background: linear-gradient(#e3effb, transparent 1%), 
+  #eff7ff url('../img/bigjetblue.jpg');
+  /*background: linear-gradient(#e3effb, transparent 1%), 
+  #eff7ff url('../img/bigdelta.jpg');*/
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-blend-mode: overlay;
+  max-width: 1150px;
+  padding-top: 260px;
+}
+
+
+
+body p {
+  font-weight: bold;
+}
+
+.wrap {
+    min-height: calc(100vh - 82px);
+    margin: 0 auto;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+/* Footer */
+
+footer {
+  max-width: 1150px;
+  background: #ffebcd;
+  background-image: linear-gradient(to bottom, #e3effb, #ffebcd);
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+
+}
+
+/*---------------------
+Memory Items Page
+----------------------*/
+
+.boxes {
+  width: 50%;
+  max-width: 1000px;
+  min-width: 250px;
+  text-align: left;
+  margin: 0 auto;
+  border: solid #0000b3;
+  border-radius: 8px;
+  background-color: /*linear-gradient(to top, #f7e9d4, #ece7df)*/ rgba(247, 233, 212, 0.5);
+  box-shadow: 10px 7px 7px rgba(0, 0, 255, 0.3);
+  /*opacity: 0.7;*/
+}
+
+.boxes h3 {
+  text-align: center;
+}
+
+.boxes ol {
+  padding: auto 0;
+}
+
+
+.quiz {
+  display: block;
+}
+
+ li span { 
+  position: relative; 
+  left: -2px; 
+}
+
+.relative {
+  position: relative;
+}
+
+
+/* Form Styling */
+
+form h1 {
+  text-align: center;
+}
+
+#contact {
+  
+  background-image: -webkit-linear-gradient(to top, #f7e9d4, #ece7df);
+  background-image: -moz-linear-gradient(to top, #f7e9d4, #ece7df);
+  background-image: linear-gradient(to top, #f7e9d4, #ece7df);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  max-width: 400px;
+  margin: auto;
+  position: relative;
+  height: 450px;
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 24px;
+  font-weight: bold;
+  color: #0000ff;
+  text-decoration: none;
+  border-radius: 8px;
+  border: 1px solid #999;
+  border: inset 1px solid #333;
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  opacity: 0.6;
+  }
+
+#contact input, textarea {
+  width: 350px;
+  display: block;
+  border: 1px solid #999;
+  height: 25px;
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+#reports {
+  position: absolute;
+  margin: auto;
+}
+
+#reports h4 {
+  position: relative;
+  bottom: -20px;
+}
+
+#reports input {
+  position: relative;
+  left: 150px;
+}
+
+button, input[type="button"] {
+  cursor: pointer;
+}
+
+/*Why is this not working?*/
+
+form input:focus, textarea:focus {
+  border-color: #52bab3;
+}
+
+/*^^^^^^^^^^^^^^^^^^^^^^^^*/
+
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 695px) {
+
+  
+
+  .container {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .main-nav li {
+    display: inline-block;
+    margin: auto .5em auto .5em;
+    padding: auto 5px auto 5px;
+  }
+
+  .boxes {
+    width: 40%;
+    max-width: 100%;
+  }
+
+
+  #menu {
+  display: none;
+}
+
+
+.nested-list {
+  display: table;
+  width: 100%;
+  padding-left: 0;
+}
+
+.nested-list li {
+  display: table-row;
+  overflow: hidden;
+}
+
+.nested-list li span {
+  display: table-cell;
+}
+
+.text-right {
+  text-align: right;
+}
+
+ol > li > ul > li {
+  color: black;
+}
+
+@media (min-width: 950px) {
+
+  .main-nav li {
+    display: inline-block;
+    margin: auto 1.5em auto 1.5em;
+    padding: auto 5px auto 5px;
+   }
+
+  #menu {
+    display: none;
+  }
+
+   header {
+    max-width: 100%;
+   }
+
+   body {
+    max-width: 100%;
+   }
+
+   footer {
+    max-width: 100%;
+   }
+
+
+  
+
+
+
+
+
+
+
+

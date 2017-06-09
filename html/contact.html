@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8" name="viewport" content="width=device-width, intial-scale=1.0">
+	<title>Contact Us</title>
+	<link rel="stylesheet" type="text/css" href="../css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+
+	<!--Insert fonts here-->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Roboto+Slab" rel="stylesheet">
+	
+</head>
+
+<body>
+	<div class="wrap">
+		<header>
+		
+			<h1 id="titlepage">Airbus Notes</h1>
+				<img class="featuredimg" src="../img/A320large.png" alt="stock A320 photo" style="width:400px;height:auto;">
+				<!--<img src="../img/tinyjetblue.jpg" alt="jetblue A320 in flight">-->
+			<nav>
+					<ul style="list-style-type: none" class="main-nav">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="A320memory.html">A320 Memory Items</a></li>
+						<li><a href="A320limitations.html">A320 Limitations</a></li>
+						<li><a href="A320systems.html">A320 Systems</a></li>
+						<li><a href="A320BP.html">Best Practices</a></li>
+						<li><a href="coolstuff.html">Cool Stuff</a></li>
+					</ul>
+				</nav>
+
+				<nav id="menu">
+					<select>
+						<option><a href="index.html">Home</a></option>
+						<option><a href="A320memory.html">A320 Memory Items</a></option>
+						<option><a href="A320limitations.html">A320 Limitations</a></option>
+						<option><a href="A320systems.html">A320 Systems</a></option>
+						<option><a href="A320BP.html">Best Practices</a></option>
+						<option><a href="coolstuff.html">Cool Stuff</a></option>
+					</select>
+				</nav>
+		</header>
+
+		<form action="contact.html" method="post" id="contact">
+			<h1>We want to hear from you!</h1>
+
+			<fieldset>
+
+				<!-- <legend><span class="number"></span> Your Info</legend> -->
+
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="user_name">
+
+				<label for="mail">Email:</label>
+				<input type="email" id="mail" name="user_email">
+
+
+			</fieldset>
+
+			<fieldset>
+
+				<!-- <legend><span class="number"></span> Your comments</legend> -->
+
+				<label for="comments">Comments:</label>
+				<textarea id="comments" name="user_comments"></textarea>
+
+			</fieldset>
+
+			<button type="submit">Submit</button>
+
+		</form>
+
+	</div>
+<footer>
+	<p>&copy; 2017 by <a href="contact.html">AirbusNotes.com</a></p>
+</footer>
+
+</body>
+</html>
