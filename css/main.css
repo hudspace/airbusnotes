@@ -56,6 +56,10 @@ a:hover {
   color:#5ff;
 }
 
+nav a:hover {
+  text-transform: uppercase;
+}
+
 /*.main-nav {
   padding-top: 10px;
   text-align: center;
