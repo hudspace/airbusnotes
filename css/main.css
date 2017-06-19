@@ -237,7 +237,8 @@ form input:focus, textarea:focus {
   Media Queries
 ==================================== */
 
-@media (min-width: 695px) {
+@media (min-width: 695px),
+       (min-width: 695 px) and (orientation: landscape) {
 
   
 
