@@ -1,7 +1,7 @@
-<script language="JavaScript">
 
 
-<!-- Begin
+
+
 // Insert number of questions
 var numQues = 20;
 

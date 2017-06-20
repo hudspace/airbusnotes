@@ -56,10 +56,6 @@ a:hover {
   color:#5ff;
 }
 
-nav a:hover {
-  text-transform: uppercase;
-}
-
 /*.main-nav {
   padding-top: 10px;
   text-align: center;
@@ -70,8 +66,6 @@ nav a:hover {
 .main-nav li { 
   display: none;
 }
-
-
 
 
 /* Body Styling */
@@ -108,9 +102,6 @@ body p {
   clear: both;
 }
 
-.answers li {
-  list-style-type: none;
-}
 
 
 /* Footer */
@@ -234,7 +225,48 @@ form input:focus, textarea:focus {
   border-color: #52bab3;
 }
 
-/*^^^^^^^^^^^^^^^^^^^^^^^^*/
+/* Cool Stuff page */
+
+.filter-select {
+  margin-left: 0;
+}
+
+.filter-select li {
+  display: inline-block;
+
+}
+
+.filter-select button {
+    background-color: rgba(0, 0, 255, .7);
+    border-radius: 10%;
+    color: white;
+    padding: 15px 32px;
+    padding-left: 1 em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2em 4em;
+    margin-left: none;
+    cursor: pointer;
+}
+
+.grid-25 {
+  
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: inline-block;
+  
+  
+}
+
+#photos {
+  display: inline-block;
+  list-style-type: none;
+}
 
 
 
@@ -242,70 +274,67 @@ form input:focus, textarea:focus {
   Media Queries
 ==================================== */
 
+@media (min-width: 695px) {
 
-@media (min-width: 695px), 
-       (min-width: 695px) and (orientation: landscape) {
+  
 
-    #menu {
-      display: none;
-    }
-    
-
-    .container {
-      width: 80%;
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-
-    .main-nav li {
-      display: inline-block;
-      margin: auto .2em auto .2em;
-      padding: 0 3px 0 3px;
-    }
-
-
-    .boxes {
-      width: 40%;
-      max-width: 100%;
-    }
-
-
-    .nested-list {
-      display: table;
-      width: 100%;
-      padding-left: 0;
-    }
-
-    .nested-list li {
-      display: table-row;
-      overflow: hidden;
-    }
-
-    .nested-list li span {
-      display: table-cell;
-    }
-
-    .text-right {
-      text-align: right;
-    }
-
-    ol > li > ul > li {
-      color: black;
-    }
-
-}
-
-@media (min-width: 890px) {
-
-  #menu {
-    display: none;
+  .container {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
   }
 
   .main-nav li {
     display: inline-block;
-    margin: auto 1.3em auto 1.3em;
-    padding: 0 3px 0 3px;
+    margin: auto .5em auto .5em;
+    padding: auto 5px auto 5px;
+  }
+
+  .boxes {
+    width: 40%;
+    max-width: 100%;
+  }
+
+
+  #menu {
+  display: none;
+}
+
+
+.nested-list {
+  display: table;
+  width: 100%;
+  padding-left: 0;
+}
+
+.nested-list li {
+  display: table-row;
+  overflow: hidden;
+}
+
+.nested-list li span {
+  display: table-cell;
+}
+
+.text-right {
+  text-align: right;
+}
+
+ol > li > ul > li {
+  color: black;
+}
+
+@media (min-width: 950px) {
+
+  .main-nav li {
+    display: inline-block;
+    margin: auto 1.5em auto 1.5em;
+    padding: auto 5px auto 5px;
    }
+
+  #menu {
+    display: none;
+  }
 
    header {
     max-width: 100%;
@@ -318,10 +347,6 @@ form input:focus, textarea:focus {
    footer {
     max-width: 100%;
    }
-
-  }
-
-
 
 
   
