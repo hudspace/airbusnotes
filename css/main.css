@@ -228,8 +228,9 @@ form input:focus, textarea:focus {
 /* Cool Stuff page */
 
 .filter-select {
-  margin-left: 0;
+  box-sizing: border-box;
 }
+
 
 .filter-select li {
   display: inline-block;
@@ -237,17 +238,15 @@ form input:focus, textarea:focus {
 }
 
 .filter-select button {
+
     background-color: rgba(0, 0, 255, .7);
     border-radius: 10%;
     color: white;
-    padding: 15px 32px;
-    padding-left: 1 em;
+    padding: 1em 1.5em;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 16px;
-    margin: 2em 4em;
-    margin-left: none;
+    margin: 1em 2em;
     cursor: pointer;
 }
 
@@ -260,7 +259,6 @@ form input:focus, textarea:focus {
   padding-right: 15px;
   display: inline-block;
   
-  
 }
 
 #photos {
@@ -268,6 +266,9 @@ form input:focus, textarea:focus {
   list-style-type: none;
 }
 
+ul {
+  padding-left: 0;
+}
 
 
 /* ================================= 
