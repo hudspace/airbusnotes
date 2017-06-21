@@ -239,7 +239,7 @@ form input:focus, textarea:focus {
 
 .filter-select button {
 
-    background-color: rgba(0, 0, 255, .7);
+    background-color: rgba(0, 0, 255, 0.4);
     border-radius: 10%;
     color: white;
     padding: 1em 1.5em;
