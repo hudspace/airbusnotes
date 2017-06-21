@@ -227,6 +227,12 @@ form input:focus, textarea:focus {
 
 /* Cool Stuff page */
 
+.selected:hover {
+  background-color: rgb(0, 0, 255);
+
+}
+
+
 .filter-select {
   box-sizing: border-box;
 }
@@ -239,7 +245,7 @@ form input:focus, textarea:focus {
 
 .filter-select button {
 
-    background-color: rgba(0, 0, 255, .7);
+    background-color: rgba(0, 0, 255, .4);
     border-radius: 10%;
     color: white;
     padding: 1em 1.5em;
@@ -269,6 +275,8 @@ form input:focus, textarea:focus {
 ul {
   padding-left: 0;
 }
+
+
 
 
 /* ================================= 
