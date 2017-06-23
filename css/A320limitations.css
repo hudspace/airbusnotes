@@ -93,7 +93,13 @@ caption {
 
 .tables {
 	margin: 1em auto;
-	
+}
+
+.tables table {
+  /* tables will not automatically expand to the full width of
+     their container. You need to specify a width if you want it
+     to do so. */
+  width: 100%;
 }
 
 
