@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-$(document).ready(function () {
-	$('button').mouseover(function () {
-=======
+
 
 
 $(document).ready(function () { //begin ready
@@ -10,7 +7,7 @@ $(document).ready(function () { //begin ready
 
 	//highlight the buttons when they're clicked and/or moused over
 	$('#A320').click(function () {
->>>>>>> photo_gallery
+
 		$('button').removeClass("selected");
 		$(this).addClass("selected");
 
@@ -22,7 +19,7 @@ $(document).ready(function () { //begin ready
 		
 		//this stores the data to put in the Ajax request
 		var flickr320 = {
-			tags: "A320", 
+			tags: "Airbus A320", 
 			format: "json"
 		};
 
@@ -62,7 +59,7 @@ $(document).ready(function () { //begin ready
 		
 		//this stores the data to put in the Ajax request
 		var flickr321 = {
-			tags: "A321", 
+			tags: "Airbus A321", 
 			format: "json"
 		};
 
@@ -100,7 +97,7 @@ $(document).ready(function () { //begin ready
 		
 		//this stores the data to put in the Ajax request
 		var flickr330 = {
-			tags: "A330", 
+			tags: "Airbus A330", 
 			format: "json"
 		};
 

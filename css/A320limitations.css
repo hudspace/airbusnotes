@@ -5,23 +5,24 @@
 }
 
 .primary, .secondary {
-  float: left;
+  float: none;
+  width: 100%;
 }
 
  .primary {
   width: 60%;
-  border: 1px solid red;
+  padding-right: 4px;
+
 }
 
 .secondary {
-   width: 40%;
-  border: 1px solid blue;
+  width: 40%;
+  padding-left: 4px;
 }
 
 .tertiary {
   clear: both;
   margin: 0 auto;
-  border: 1px solid green;
 }
 
 .clearfix:after {
@@ -105,6 +106,21 @@ caption {
   margin-bottom: 20px;
 }
 
+.MI {
+  color: #8080ff;
+  font-weight: bold;
+}
+
+caption {
+  text-decoration: underline;
+}
+
+@media (min-width: 950px) {
+  .primary, .secondary {
+    float: left;
+   }
+  
+}
 
 
 
