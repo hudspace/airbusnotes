@@ -100,6 +100,9 @@ caption {
      their container. You need to specify a width if you want it
      to do so. */
   width: 100%;
+  /* instead of adding `<br>` tags after tables, put a margin on
+     the bottom of the table. */
+  margin-bottom: 20px;
 }
 
 
