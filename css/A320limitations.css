@@ -115,7 +115,7 @@ caption {
   text-decoration: underline;
 }
 
-@media (min-width: 950px) {
+@media (min-width: 800px) {
   .primary, .secondary {
     float: left;
    }

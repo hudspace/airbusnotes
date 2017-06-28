@@ -1,4 +1,4 @@
-//Select the Limitations headline with id "takequiz"
+//Select the Limitations headline with id "takequiz" 
 
 const takequiz = document.getElementById('takequiz');
 
