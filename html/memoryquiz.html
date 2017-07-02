@@ -16,33 +16,45 @@
 
 <body>
 	<div class="wrap clearfix">
-		<header>
-			<h3 id="titlepage">Airbus Notes</h3>
-				<img class="featuredimg" src="../img/A320large.png" alt="stock A320 photo" style="width: 250px; height: auto">
-				<!--<img src="../img/tinyjetblue.jpg" alt="jetblue A320 in flight">-->
+		<header class="clearfix">
+			<div id="logo">
+				<h3 id="titlepage">Airbus Notes</h3>
+				<img id="featuredimg" src="../img/A320large.png" alt="stock A320 photo" style="width: 250px; height: auto">
+			</div>
+			<!--<img src="../img/tinyjetblue.jpg" alt="jetblue A320 in flight">-->
 			<nav>
 				<ul style="list-style-type: none" class="main-nav">
-					<li><a href="index.html">Home</a></li>
+					<li class="selected"><a href="index.html">Home</a></li>
 					<li><a href="A320memory.html">A320 Memory Items</a></li>
-					<li class="selected"><a href="A320limitations.html">A320 Limitations</a></li>
+					<li><a href="A320limitations.html">A320 Limitations</a></li>
 					<li><a href="A320systems.html">A320 Systems</a></li>
 					<li><a href="bestpractices.html">Best Practices</a></li>
 					<li><a href="coolstuff.html">Cool Stuff</a></li>
 				</ul>
 			</nav>
 
-			<nav id="menu">
-					<select>
-						<option><a href="index.html">Home</a></option>
+			<div class="mobile_nav" id="menu">
+				<a href="index.html">Home</a>
+				<a href="A320memory.html">A320 Memory Items</a>
+				<a href="A320limitations.html">A320 Limitations</a>
+				<a href="A320systems.html">A320 Systems</a>
+				<a href="A320BP.html">Best Practices</a>
+				<a href="coolstuff.html">Cool Stuff</a>
+				<a href="#" class="icon" onclick="mobileMenu()">&#9776;</a>
+			</div>
+					
+			<!--<nav>
+					<select>	
+						<option class="selected"><a href="index.html">Home</a></option>
 						<option><a href="A320memory.html">A320 Memory Items</a></option>
 						<option><a href="A320limitations.html">A320 Limitations</a></option>
 						<option><a href="A320systems.html">A320 Systems</a></option>
 						<option><a href="A320BP.html">Best Practices</a></option>
 						<option><a href="coolstuff.html">Cool Stuff</a></option>
 					</select>
-			</nav>
+			</nav>-->
 		</header>
-
+		
 		<div class="container">
 
 			<h3 style="text-align: center">Memory Items and Limitations Quiz</h3>
