@@ -31,9 +31,12 @@
   clear: both;
 }
 
-.container {
+.limitations_container {
   overflow: hidden;
+  width: 92%;
 }
+
+
 
 
 th {
