@@ -75,6 +75,10 @@ h1, h2 {
   color: #0000b3;
 }
 
+.container {
+  padding: 0 .5em;
+}
+
 img {
   max-width: 100%;
   margin: 0 auto;
@@ -202,6 +206,21 @@ Memory Items Page
   left: -2px; 
 }
 
+
+/*---------------------
+Best Practices Page
+----------------------*/
+
+article ul {
+  margin: 0 auto;
+}
+
+article ul li {
+  
+    list-style-type: disc;
+    list-style-position: inside;
+ 
+}
 
 /* Form Styling */
 

@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Airbus Notes</title>
+
+	<!--Insert stylesheets here-->
+	<link rel="stylesheet" type="text/css" href="../css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+
+	<!--Insert fonts here-->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Roboto+Slab" rel="stylesheet">
+	
+	
+</head>
+
+<body>
+	<div class="wrap">
+		<header class="clearfix">
+			<div id="logo">
+				<h3 id="titlepage">Airbus Notes</h3>
+				<img id="featuredimg" src="../img/A320large.png" alt="stock A320 photo" style="width: 250px; height: auto">
+			</div>
+			<!--<img src="../img/tinyjetblue.jpg" alt="jetblue A320 in flight">-->
+			<nav>
+				<ul style="list-style-type: none" class="main-nav">
+					<li class="selected"><a href="index.html">Home</a></li>
+					<li><a href="A320memory.html">Memory Items</a></li>
+					<li><a href="A320limitations.html">Limitations</a></li>
+					<!--<li><a href="A320systems.html">Systems</a></li>-->
+					<li><a href="bestpractices.html">Best Practices</a></li>
+					<li><a href="coolstuff.html">Cool Stuff</a></li>
+				</ul>
+			</nav>
+
+			<div class="mobile_nav" id="menu">
+				<a href="index.html">Home</a>
+				<a href="A320memory.html">Memory Items</a>
+				<a href="A320limitations.html">Limitations</a>
+				<!--<a href="A320systems.html">Systems</a>-->
+				<a href="bestpractices.html">Best Practices</a>
+				<a href="coolstuff.html">Cool Stuff</a>
+				<a href="#" class="icon" onclick="mobileMenu()">&#9776;</a>
+			</div>
+					
+			<!--<nav>
+					<select>	
+						<option class="selected"><a href="index.html">Home</a></option>
+						<option><a href="A320memory.html">A320 Memory Items</a></option>
+						<option><a href="A320limitations.html">A320 Limitations</a></option>
+						<option><a href="A320systems.html">A320 Systems</a></option>
+						<option><a href="A320BP.html">Best Practices</a></option>
+						<option><a href="coolstuff.html">Cool Stuff</a></option>
+					</select>
+			</nav>-->
+		</header>
+
+			<div class="container">
+
+			
+<br>
+			
+				<article>
+					<h4 style="text-align: center">Descent Management and the FMGS</h4>
+
+					<p>The FMGC minimizes cost by optimizing speed. The optimization function computes the following items:
+
+					<ul>
+						<li>Takeoff, approach, and go-around speeds (F, S, Greendot, and V<sub>APP</sub>)</li>
+						<li>An optimum target speed for CLB and DES phases (ECON CLB/DES SPD)</li>
+						<li>An optimum target Mach number for CRZ phase (CRZ MACH)</li>
+						<li>An optimum Flight Level, for information purposes</li>
+						<li><strong><i>An optimum descent profile from CRZ FL down to the destination airport</i></strong></li>
+					</ul></p>
+
+					<p>That last bullet can often trip us up when we're trying to manage our descent using the cues from the FMGC and by extension, our Primary Flight Display. That last bullet can often trip us up when we're trying to manage our descent using the cues from the FMGC and by extension, our Primary Flight Display.  This is because the FMGC-computed top of descent (TOD) and our <i>actual</i> top of descent rarely coincide. Air Traffic Control can and often does descend us early, or late, for myriad reasons. These include avoiding traffic conflicts, managing traffic flow into the terminal area, and other everyday ATC stuff. Sometimes they’ll even give us a late climb above our cruise altitude, before beginning our final descent. All of these early and/or late starts into the descent phase mean trouble for us as pilots, until we understand that the computed TOD arrow on your PFD <i><b>is not updated without pilot input</b></i>.</p>
+
+					<p>Consider the following graphic:</p>
+
+					<br>
+
+					<img src="../img/descent2.png">
+
+					<br>
+
+					<p>The dotted blue lines represent the amount of altitude the aircraft has to lose in order to land. The first one, the one labeled "Original altitude to lose", is the altitude that the FMGS uses when it initially calculates the descent profile. The second dotted line, labeled "New altitude to lose", represents the amount of altitude required to descend for landing AFTER a descent has been issued to some intermediate altitude below the aircraft's cruise flight level. Intuitively, we know that the top of descent is will occur later in the flight if we have less altitude to lose. In other words, with less altitude to lose in order to land, the total descent will take less time, and we can therefore stay at cruise longer.</p>
+
+					<p>But when ATC clears us to an intermediate cruise altitude ahead of our FMGS-computed top of descent (and this happens more often than not), our TOD must be adjusted. The FMGS will not recalculate it without some help from you. Now, hopefully you’re doing some mental math as a backup to the visual cues provided on the pfd (if you aren’t, you should be), but if you're like me, but if you’re like me, you rely on that magenta TOD arrow maybe a little too much. It’s fine to use it as an aid to your descent planning but if you typically base your decision to descend on your proximity to that bent arrow, just know that it can lead you down the primrose path. In most cases, following its guidance will cause you to descend early if you don't do something to make the FMGS recalculate the profile, resulting in wasted fuel, wasted time, or both (plus it just makes you look bad!).
+</p>
+
+				</article>
+
+			</div>
+
+	</div>
+
+
+
+
+<script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+<script src="../js/nav.js"></script>
+  
+<footer>
+	<p>&copy; 2017 by <a href="contact.html">AirbusNotes.com</a></p>
+</footer>
+
+</body>
+</html>
