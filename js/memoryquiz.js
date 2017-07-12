@@ -7,55 +7,25 @@ const takequiz = document.getElementById('takequiz');
 takequiz.addEventListener('mouseover', () => {
 	var x = confirm("Would you like to test your Memory Items and Limitations knowledge? Click 'OK' for yes, 'Cancel' for no.");
 	if (x) {
-		location.assign('../html/memoryquiz.html');
+		location.assign('memoryquiz.html');
 	}
 });
 
+//Above function repeated to cause popup asking if user would like to submit comments
 
-//var questions = [
-//   ['How many states are in the United States?', 50],
-//   ['How many continents are there?', 7],
-//   ['How many legs does an insect have?', 6]
-// ];
-// var correctAnswers = 0;
-// var question;
-// var answer;
-// var response;
-// var correct = [];
-// var wrong = [];
+const contactForm = document.getElementsByClassname('contact');
+
+contactForm.addEventListener('mouseover', () => {
+	var y = confirm("Click Ok if you'd like to leave feedback!");
+
+	if (y) {
+		location.assign('../html/contact.html');
+	}
+
+});
 
 
 
-// function print(message) {
-//   document.write(message);
-// }
 
-// function buildList(arr) {
-//   var listHTML = '<ol>';
-//   for (var i = 0; i < arr.length; i += 1) {
-//     listHTML += '<li>' + arr[i] + '</li>';
-//   }
-//   listHTML += '</ol>';
-//   return listHTML;
-// }
 
-// for (var i = 0; i < questions.length; i += 1) {
-//   question = questions[i][0];
-//   answer = questions[i][1];
-//   response = prompt(question);
-//   response = parseInt(response);
-//   if (response === answer) {
-//     correctAnswers += 1;
-//     correct.push(question);
-//   } else {
-//     wrong.push(question);
-//   } 
-// }
 
-// html = "You got " + correctAnswers + " question(s) right."
-// html += '<h2>You got these questions correct:</h2>';
-// html += buildList(correct);
-// html += '<h2>You got these questions wrong:</h2>';
-// html += buildList(wrong);
-// print(html);
-// 
