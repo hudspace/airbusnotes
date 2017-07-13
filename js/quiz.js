@@ -33,7 +33,7 @@ answers[17] = "36 &#8451";
 answers[18] = "39,100 ft";
 answers[19] = "1090 &#8451";
 
-// Do not change anything below here ...
+
 function getScore(form) {
   var score = 0;
   var currElt;
@@ -56,6 +56,8 @@ function getScore(form) {
   for (i=1; i<=numQues; i++) {
     correctAnswers += i + ". " + answers[i-1] + "\r\n";
   }
+
+  //This part will go away eventually; will instead write function to list only answers that were incorrect
   form.solutions.value = correctAnswers;
 }
 //  End -->

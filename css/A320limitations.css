@@ -32,6 +32,7 @@
 }
 
 .limitations_container {
+  padding-left: 1em;
   overflow: hidden;
   width: 92%;
 }
@@ -100,9 +101,7 @@ caption {
 }
 
 .tables table {
-  /* tables will not automatically expand to the full width of
-     their container. You need to specify a width if you want it
-     to do so. */
+  
   width: 100%;
   /* instead of adding `<br>` tags after tables, put a margin on
      the bottom of the table. */
@@ -123,6 +122,13 @@ caption {
     float: left;
    }
   
+}
+
+/* Allow tables to expand to fill page when screen gets too narrow to use floated columns */
+@media (max-width: 800px) {
+  .primary, .secondary {
+    width: 100%;
+  }
 }
 
 

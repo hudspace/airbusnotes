@@ -11,18 +11,6 @@ takequiz.addEventListener('mouseover', () => {
 	}
 });
 
-//Above function repeated to cause popup asking if user would like to submit comments
-
-const contactForm = document.getElementsByClassname('contact');
-
-contactForm.addEventListener('mouseover', () => {
-	var y = confirm("Click Ok if you'd like to leave feedback!");
-
-	if (y) {
-		location.assign('../html/contact.html');
-	}
-
-});
 
 
 
