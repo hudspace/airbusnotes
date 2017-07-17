@@ -8,9 +8,6 @@
   background: #e3effb;
 }
 
-/* ----  Use the following CSS rules to specify these families:
-font-family: 'Roboto', sans-serif;
-font-family: 'Roboto Slab', serif; ---------------------------*/
 
 /* Header styling */
 
@@ -26,6 +23,7 @@ header {
 }
 
 
+/* Mobile menu styling */
 #menu {
   /*background-color: #ffebcd;*/
   overflow: hidden;
@@ -39,6 +37,7 @@ header {
 #menu a:hover {
   text-transform: uppercase;
 }
+
 
  #menu a.icon {
   float: right;
@@ -92,19 +91,11 @@ a:link {
   color: #0000ff;
 }
 
-/*a:visited {
-  color: #00FF00;
-}*/
 
 a:hover {
   color:#0000b3;
  }
 
-/*.main-nav {
-  padding-top: 10px;
-  text-align: center;
-  margin: 0 auto;
-}*/
 
 
 .main-nav li { 
@@ -130,12 +121,7 @@ body {
 }
 
 
-
-
-
-/*body p {
-  font-weight: bold;
-}*/
+/* Sticky footer */
 
 .wrap {
     min-height: calc(100vh - 82px);
@@ -162,10 +148,6 @@ footer {
 
 }
 
-.construction {
-  margin: 0 auto;
-  width: 100%;
-}
 
 /*---------------------
 Memory Items Page
@@ -257,7 +239,7 @@ form h1 {
   }
 
 #contact input, textarea {
-  width: 350px;
+  width: 100%;
   display: block;
   border: 1px solid #999;
   height: 25px;
@@ -266,32 +248,10 @@ form h1 {
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
 }
 
-#reports {
-  position: absolute;
-  margin: auto;
-}
 
-#reports h4 {
-  position: relative;
-  bottom: -20px;
-}
-
-#reports input {
-  position: relative;
-  left: 150px;
-}
-
-button, input[type="button"] {
-  cursor: pointer;
-}
-
-/*Why is this not working?*/
-
-form input:focus, textarea:focus {
-  border-color: #52bab3;
-}
-
-/* Cool Stuff page */
+/*-----------------
+  Cool Stuff page 
+-----------------*/
 
 
 .filter-select {
@@ -379,12 +339,6 @@ ul {
 
 }
 
-/*@media (max-width: 330px) {
-  
-  #featuredimg, #titlepage {
-    transform: scale(.65);
-  }
-}*/
 
 
 

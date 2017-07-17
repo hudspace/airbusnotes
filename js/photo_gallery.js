@@ -1,11 +1,7 @@
 $(document).ready(function () { //begin ready
   
 	$('.photo-button').click(function(event) {
-		// this is the non-jQuery way
-		// ========================
-		// var target = event.target;
-		// var id = target.id;
-
+		
 		var id = $(this).prop('id');
 
 		$('button').removeClass("selected");
@@ -19,7 +15,6 @@ $(document).ready(function () { //begin ready
 		//Variable holds url with JSON query string (derived from the Flickr API)
 		var flickrAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?"; 
 		
-		//var planeType = $(this).text(); This doesn't do anything but I'm not deleting it yet
 		
 		//this stores the data to put in the Ajax request
 		var flickerProps = {
