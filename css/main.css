@@ -98,7 +98,7 @@ a:hover {
 
 
 
-.main-nav li { 
+.main-nav li {
   display: none;
 }
 
@@ -106,9 +106,9 @@ a:hover {
 
 
 body {
-  background: linear-gradient(#e3effb, transparent 1%), 
+  background: linear-gradient(#e3effb, transparent 1%),
   #eff7ff url('../img/bigjetblue.jpg');
-  /*background: linear-gradient(#e3effb, transparent 1%), 
+  /*background: linear-gradient(#e3effb, transparent 1%),
   #eff7ff url('../img/bigdelta.jpg');*/
   background-position: center;
   background-attachment: fixed;
@@ -183,9 +183,9 @@ Memory Items Page
   display: block;
 }
 
- li span { 
-  position: relative; 
-  left: -2px; 
+ li span {
+  position: relative;
+  left: -2px;
 }
 
 
@@ -198,10 +198,10 @@ article ul {
 }
 
 article ul li {
-  
+
     list-style-type: disc;
     list-style-position: inside;
- 
+
 }
 
 /* Form Styling */
@@ -211,7 +211,7 @@ form h1 {
  }
 
 #contact {
-  
+
   background-image: -webkit-linear-gradient(to top, #f7e9d4, #ece7df);
   background-image: -moz-linear-gradient(to top, #f7e9d4, #ece7df);
   background-image: linear-gradient(to top, #f7e9d4, #ece7df);
@@ -250,7 +250,7 @@ form h1 {
 
 
 /*-----------------
-  Cool Stuff page 
+  Cool Stuff page
 -----------------*/
 
 
@@ -279,14 +279,14 @@ form h1 {
 }
 
 .grid-25 {
-  
+
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding-left: 15px;
   padding-right: 15px;
   display: inline-block;
-  
+
 }
 
 #photos {
@@ -310,7 +310,7 @@ ul {
 }
 
 
-/* ================================= 
+/* =================================
   Media Queries
 ================================== */
 
@@ -413,7 +413,7 @@ body {
 ol > li > ul > li {
   color: black;
   }
-  
+
 }
 
 
@@ -439,6 +439,4 @@ ol > li > ul > li {
 
    footer {
     max-width: 100%;
-   }
-
-   
+}

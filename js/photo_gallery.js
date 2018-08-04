@@ -1,7 +1,7 @@
 $(document).ready(function () { //begin ready
-  
+
 	$('.photo-button').click(function(event) {
-		
+
 		var id = $(this).prop('id');
 
 		$('button').removeClass("selected");
@@ -13,12 +13,12 @@ $(document).ready(function () { //begin ready
 
 	function getPhotos(id) {
 		//Variable holds url with JSON query string (derived from the Flickr API)
-		var flickrAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?"; 
-		
-		
+		var flickrAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
+
+
 		//this stores the data to put in the Ajax request
 		var flickerProps = {
-			tags: "Airbus " + id, 
+			tags: "Airbus " + id,
 			format: "json"
 		};
 
@@ -36,7 +36,7 @@ $(document).ready(function () { //begin ready
 		}
 
 		//This is the AJAX send request
-		$.getJSON(flickrAPI, flickerProps, displayPhotos);		
+		$.getJSON(flickrAPI, flickerProps, displayPhotos);
 	}
 
 
